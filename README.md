@@ -1,4 +1,20 @@
-# TIMDA
+<p align="center">
+  <img src="concepts/art/timda-176x62.png" width="88" height="31" alt="TIMDA 88x31 button">
+</p>
+
+<h1 align="center">TIMDA</h1>
+
+<p align="center">
+  <strong>Technocratic Incorporated Multi-node Digital Astrodrome</strong><br>
+  A webring as objet d'art: a living, interactive art installation shaped like a space station.
+</p>
+
+<p align="center">
+  <a href="https://timda.space">timda.space</a> ·
+  <a href="guides/docking.md">Dock a Section</a> ·
+  <a href="specs/0001-finger-record.md">The specs</a> ·
+  <a href="https://github.com/timda-space/timda-website">The hub's code</a>
+</p>
 
 **Technocratic Incorporated Multi-node Digital Astrodrome**
 
