@@ -65,13 +65,31 @@ You should see exactly what `timda check` showed, ending in a **Checks** list. A
 
 ## 5. Ask to dock
 
-Write and sign a dock request (TIMDA-2 §6), then upload `dock.txt` and `dock.txt.sig` at **https://timda.space/dock** within 10 minutes of signing:
+Do this once your records are published and `finger` looks right. Either way, the hub checks the signature against your live records, and you have 10 minutes between signing and uploading.
+
+**The easy way.** `timda init section72.net > section.toml` writes the settings file that `plan --from section.toml` read in step 2. From the folder holding it:
 
 ```console
+$ node /path/to/timda.space/tools/timda.mjs dock --from section.toml
+```
+
+(After `npm link` in this repo, that's just `timda dock`.) It writes the request, signs it with your key through `ssh-keygen`, and sends it to the hub.
+
+**By hand.** Write the request, sign it, then upload `dock.txt` and `dock.txt.sig` at **https://timda.space/dock**:
+
+```console
+$ cat > dock.txt <<EOF
+timda-statement: 1
+type: dock-request
+from: section72.net
+hub: timda.space
+issued: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+nonce: $(head -c 16 /dev/urandom | base64 | tr '+/' '-_' | tr -d =)
+EOF
 $ ssh-keygen -Y sign -f ~/.ssh/timda -n timda dock.txt
 ```
 
-The hub checks the signature against your live records and adds you to its registry, where you wait for the Board's review: nothing of you is listed until you're approved. (With a `section.toml`, `timda dock` does the whole thing in one command.) Once approved, while your status is `pending` you show greyed out in the HyperMall, and visitors aren't sent your way. Switch to `open` and you're live, with a link to your airlock and a place on the ring.
+(The fields are in TIMDA-2 §6.) The hub adds you to its registry, where you wait for the Board's review: nothing of you is listed until you're approved. Once approved, while your status is `pending` you show greyed out in the HyperMall, and visitors aren't sent your way. `init` and `plan` both start you at `pending`; when you're ready to go live, change it to `open` and publish the records again. Then you have a link to your airlock and a place on the ring.
 
 To send visitors round the ring from your own site, link to `https://timda.space/next?from=<your domain>` and `https://timda.space/random`.
 
@@ -85,7 +103,7 @@ $ ssh-keygen -Y verify -f allowed_signers -I section72.net -n timda -s dock.txt.
 
 ## Put the launch button on your site
 
-Once you're docked, add the station's 88×31 launch button. It sends visitors through a random wormhole. Download `timda-88x31.png` and `timda-176x62.png` from [timda.space/dock](https://timda.space/dock#launch-button) and host them yourself, so your visitors' browsers don't contact the hub until they click:
+Once you're docked, add the station's 88×31 launch button. It sends visitors through a random wormhole. Download `timda-88x31.png` and `timda-176x62.png` (from [timda.space/dock](https://timda.space/dock#launch-button), or from [`concepts/art/`](../concepts/art/) in this repo) and host them yourself, so your visitors' browsers don't contact the hub until they click. The `src` paths below are where *you* put them on your own site:
 
 ```html
 <a href="https://timda.space/random"><img src="/timda-88x31.png"
