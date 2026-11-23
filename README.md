@@ -37,6 +37,7 @@ This repo holds the concepts, protocols and governance for the web version of TI
 | [`specs/0002-signed-statements.md`](specs/0002-signed-statements.md) | **TIMDA-2**: signed statements. Sections sign with their SSH key; anyone verifies against the key in DNS. Opting in is a signed dock request. |
 | [`specs/0003-inbox.md`](specs/0003-inbox.md) | **TIMDA-3**: inboxes. Opt in with `_inbox._timda`; Sections send each other signed messages through a hub, optionally sealed with age. |
 | [`guides/docking.md`](guides/docking.md) | How to bring a Section aboard: key first, then records (planned in one command), then a signed dock request. Rotating, losing or replacing a key. |
+| [`guides/promotion.md`](guides/promotion.md) | Telling people about TIMDA: sample posts and the 88x31 button snippet. |
 | [`infra/`](infra/README.md) | OpenTofu for the station's Cloudflare setup: the hub's Pages project, zone settings, and TIMDA-1 records. [`infra/modules/timda-section`](infra/modules/timda-section) is a template any Section can copy. |
 | [`governance/open-questions.md`](governance/open-questions.md) | Questions that are still undecided |
 | [`tools/`](tools/) | The reference parser and signature verifier, and the `timda` tool: look up, plan and check records, dock, collect and send mail, and the Board's motions |
