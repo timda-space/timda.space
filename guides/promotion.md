@@ -56,7 +56,7 @@ The station's own docking page, [timda.space/dock](https://timda.space/dock), ha
 
 ## The station art
 
-The station picture comes from the [Space Station Generator](https://uselesspursuit.itch.io/space-station-generator) and is under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/): share it with credit, for non-commercial uses, and without changes. Show it as it is, and don't crop, recolour or redraw it. The button and the rest of the site's graphics are not derived from it. More in [the look](../concepts/look.md).
+The station picture comes from the [Space Station Generator](https://uselesspursuit.itch.io/space-station-generator) and is under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/): share it with credit, for non-commercial uses, and without changes. Show it as it is, and don't crop, recolour or redraw it. The button is not derived from it: it's drawn from the station's favicon and a pixel font. More in [the look](../concepts/look.md).
 
 ## Before you post
 
