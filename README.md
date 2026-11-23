@@ -1,8 +1,4 @@
-<div align="center">
-
-# TIMDA
-
-</div>
+<h1 align="center">TIMDA</h1>
 
 <p align="center">
   <strong>Technocratic Incorporated Multi-node Digital Astrodrome</strong><br>
