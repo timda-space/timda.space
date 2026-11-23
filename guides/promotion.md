@@ -54,9 +54,6 @@ The 88&times;31 launch button is original art, free to use on any TIMDA Section.
 
 The station's own docking page, [timda.space/dock](https://timda.space/dock), has the same snippet, plus links to go round the ring.
 
-## The station art
-
-The station picture comes from the [Space Station Generator](https://uselesspursuit.itch.io/space-station-generator) and is under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/): share it with credit, for non-commercial uses, and without changes. Show it as it is, and don't crop, recolour or redraw it. The button is not derived from it: it's drawn from the station's favicon and a pixel font. More in [the look](../concepts/look.md).
 
 ## Before you post
 
