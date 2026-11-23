@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <h1 align="center">TIMDA</h1>
 
 <p align="center">
@@ -26,6 +28,8 @@ This repo holds the concepts, protocols and governance for the web version of TI
 
 **Everything is opt-in.** There is one shared setting, and nobody is pulled into any part of it. Joining, linking, how deeply a Section integrates, and whether anyone plays along are all each participant's own choice.
 
+[(top)](#top)
+
 ## Contents
 
 | Path | What it is |
@@ -40,6 +44,8 @@ This repo holds the concepts, protocols and governance for the web version of TI
 | [`infra/`](infra/README.md) | OpenTofu for the station's Cloudflare setup: the hub's Pages project, zone settings, and TIMDA-1 records. [`infra/modules/timda-section`](infra/modules/timda-section) is a template any Section can copy. |
 | [`governance/open-questions.md`](governance/open-questions.md) | Questions that are still undecided |
 | [`tools/`](tools/) | The reference parser and signature verifier, and the `timda` tool: look up, plan and check records, dock, collect and send mail, and the Board's motions |
+
+[(top)](#top)
 
 ## Quick look
 
@@ -66,9 +72,13 @@ The tool needs Node 20 or later and has no dependencies. Run `npm link` once in 
 
 Run `npm test` to check the parser and the tool against the specs. With `ssh-keygen` installed, it also signs and verifies a real statement.
 
+[(top)](#top)
+
 ## Scope
 
 This repo covers **web TIMDA** only. The older BBS/dial-up TIMDA (dial-in Sections, CTF arena, voting) is documented separately and is not covered here. How the two relate is an [open question](governance/open-questions.md#bbs-and-web).
+
+[(top)](#top)
 
 ## Licences
 
@@ -76,3 +86,5 @@ This repo covers **web TIMDA** only. The older BBS/dial-up TIMDA (dial-in Sectio
 - **Specs and documents** (`specs/`, `concepts/`, `guides/`, `governance/`, `infra/`, and this README): [CC BY 4.0](LICENSE-docs). Copy, translate, adapt and build on them, with credit to timda.space.
 - **Not ours:** the station art in `concepts/art/station-*` is from the Space Station Generator, under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) (see [the look](concepts/look.md)).
 - **Vendored:** [smol-toml](tools/vendor/smol-toml/VENDORED.md) keeps its own BSD-3-Clause licence.
+
+[(top)](#top)
