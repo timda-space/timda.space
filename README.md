@@ -1,6 +1,21 @@
-# TIMDA
+<h1 align="center">TIMDA</h1>
 
-**Technocratic Incorporated Multi-node Digital Astrodrome**
+<p align="center">
+  <strong>Technocratic Incorporated Multi-node Digital Astrodrome</strong><br>
+  A webring as objet d'art: a living, interactive art installation shaped like a space station.
+</p>
+
+<p align="center">
+  <a href="https://timda.space">timda.space</a> ·
+  <a href="guides/docking.md">Dock a Section</a> ·
+  <a href="specs/0001-finger-record.md">The specs</a> ·
+  <a href="https://github.com/timda-space/timda-website">The hub's code</a>
+</p>
+
+<p align="center">
+  <img align="middle" src="concepts/art/timda-176x62.png" width="88" height="31" alt="TIMDA 88x31 button">
+  <a href="https://github.com/timda-space/timda.space/actions/workflows/test.yml"><img align="middle" src="https://github.com/timda-space/timda.space/actions/workflows/test.yml/badge.svg?branch=main" alt="test status"></a>
+</p>
 
 This repo holds the concepts, protocols and governance for the web version of TIMDA: the setting, how Sections are discovered, and how the station is run. The website itself lives in [`timda-website`](https://github.com/timda-space/timda-website).
 
