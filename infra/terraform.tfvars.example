@@ -1,0 +1,11 @@
+# Copy to terraform.tfvars (git-ignored) and fill in. Nothing here is secret:
+# IDs and public keys are fine to share, but keeping the file local avoids churn.
+
+account_id = "0123456789abcdef0123456789abcdef"
+
+zone_ids = {
+  "timda.space" = "0123456789abcdef0123456789abcdef"
+}
+
+# node tools/finger.mjs --key-from ~/.ssh/<key>.pub
+hub_keys = ["sk-ed25519:REPLACE_WITH_44_CHARS_OF_BASE64_xxxxxxxxxxxxxxx="]

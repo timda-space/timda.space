@@ -1,0 +1,16 @@
+# Copy to backend.hcl (git-ignored), fill in, then: tofu init -backend-config=backend.hcl
+# R2 credentials come from AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY (an R2 API token),
+# never from this file.
+
+bucket = "timda-tofu-state"
+key    = "timda-website/terraform.tfstate"
+region = "auto"
+endpoints = {
+  s3 = "https://<ACCOUNT_ID>.r2.cloudflarestorage.com"
+}
+use_path_style              = true
+skip_credentials_validation = true
+skip_region_validation      = true
+skip_requesting_account_id  = true
+skip_metadata_api_check     = true
+skip_s3_checksum            = true

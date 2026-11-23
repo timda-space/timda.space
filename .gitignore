@@ -1,0 +1,13 @@
+# scratch files from signing and planning
+*.sig
+allowed_signers
+hello.txt
+dock.txt
+*.zone
+# statements you make by hand (keep them in a folder outside the repo, like ~/timda)
+*.age
+approve.txt
+clear.txt
+inbox.txt
+msg.txt
+/section.toml

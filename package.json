@@ -1,0 +1,17 @@
+{
+  "name": "timda-space",
+  "private": true,
+  "type": "module",
+  "description": "Concepts, protocols and governance for TIMDA",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "timda": "node tools/timda.mjs"
+  },
+  "bin": {
+    "timda": "tools/timda.mjs"
+  },
+  "license": "MIT"
+}
