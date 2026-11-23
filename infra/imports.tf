@@ -3,12 +3,12 @@
 
 import {
   to = cloudflare_pages_project.timda_website
-  id = "${var.account_id}/timda-hub"
+  id = "${var.account_id}/timda-station"
 }
 
 import {
   to = cloudflare_pages_domain.staging
-  id = "${var.account_id}/timda-hub/staging.timda.space"
+  id = "${var.account_id}/timda-station/staging.timda.space"
 }
 
 import {

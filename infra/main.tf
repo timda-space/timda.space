@@ -6,7 +6,7 @@
 
 resource "cloudflare_pages_project" "timda_website" {
   account_id        = var.account_id
-  name              = "timda-hub"
+  name              = "timda-station"
   production_branch = var.production_branch
 
   build_config = {
