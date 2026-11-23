@@ -13,11 +13,8 @@
 </p>
 
 <p align="center">
-  <img src="concepts/art/timda-176x62.png" width="88" height="31" alt="TIMDA 88x31 button">
-</p>
-
-<p align="center">
-  <a href="https://github.com/timda-space/timda.space/actions/workflows/test.yml"><img src="https://github.com/timda-space/timda.space/actions/workflows/test.yml/badge.svg?branch=main" alt="test status"></a>
+  <img align="middle" src="concepts/art/timda-176x62.png" width="88" height="31" alt="TIMDA 88x31 button">
+  <a href="https://github.com/timda-space/timda.space/actions/workflows/test.yml"><img align="middle" src="https://github.com/timda-space/timda.space/actions/workflows/test.yml/badge.svg?branch=main" alt="test status"></a>
 </p>
 
 This repo holds the concepts, protocols and governance for the web version of TIMDA: the setting, how Sections are discovered, and how the station is run. The website itself lives in [`timda-website`](https://github.com/timda-space/timda-website).
